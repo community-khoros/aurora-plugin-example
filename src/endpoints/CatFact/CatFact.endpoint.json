@@ -1,0 +1,8 @@
+{
+  "id": "Sample",
+  "httpMethods": [
+    "GET",
+    "POST"
+  ],
+  "postBody": "NONE"
+}
