@@ -28,7 +28,7 @@ async function handler<
   if (apiResponse.ok) {
     const json = (await apiResponse.json()) as Record<string, unknown>;
     response.json({
-      message: `Enjoy a Cat fact: ${json.fact}`
+      message: `Cat fact: ${json.fact}`
     });
   } else {
     response.status(apiResponse.status).send({ message: 'Error!' });
