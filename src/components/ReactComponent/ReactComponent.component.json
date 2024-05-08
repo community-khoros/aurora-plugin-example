@@ -1,0 +1,19 @@
+{
+  "id": "ReactSample",
+  "markupLanguage": "REACT",
+  "defaults": {
+    "config": {
+      "applicablePages": [],
+      "dynamicByCoreNode": false,
+      "description": "A sample custom React component"
+    },
+    "props": []
+  },
+  "components": [
+    {
+      "id": "custom.widget.ReactSample"
+    }
+  ],
+  "grouping": "CUSTOM",
+  "aboutThis": null
+}

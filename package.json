@@ -1,0 +1,42 @@
+{
+  "name": "@customer/plugin",
+  "version": "0.0.1",
+  "description": "A sample plugin package.json file.",
+  "private": true,
+  "workspaces": [
+    "src/**/*"
+  ],
+  "scripts": {
+    "init": "npm explore khoros-aurora-sdk -- npm run init:plugin -- $INIT_CWD",
+    "start": "npm explore khoros-aurora-sdk -- npm run start -- $INIT_CWD",
+    "dev": "npm explore khoros-aurora-sdk -- npm run dev:plugin -- $INIT_CWD",
+    "build": "npm explore khoros-aurora-sdk -- npm run build:plugin -- $INIT_CWD",
+    "lint": "npm explore khoros-aurora-sdk -- npm run lint:plugin -- $INIT_CWD",
+    "lint:fix": "npm explore khoros-aurora-sdk -- npm run lint:plugin:fix -- $INIT_CWD",
+    "format": "npm explore khoros-aurora-sdk -- npm run format:plugin -- $INIT_CWD",
+    "format:fix": "npm explore khoros-aurora-sdk -- npm run format:plugin:fix -- $INIT_CWD",
+    "gen": "npm explore khoros-aurora-sdk -- npm run gen  -- $INIT_CWD",
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "khoros-aurora-sdk": "^24.4.4"
+  },
+  "engines": {
+    "node": ">=16.17.0 <=20",
+    "npm": ">=8.5.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit",
+      "post-commit": "git update-index --again"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,css,scss,pcss,json}": [
+      "prettier --write"
+    ],
+    "**/*.{js,ts,tsx}": [
+      "eslint --fix --ignore-pattern '!.eslintrc.js' --ignore-pattern '!.prettierrc.js'"
+    ]
+  }
+}
