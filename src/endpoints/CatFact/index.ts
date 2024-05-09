@@ -7,7 +7,7 @@ interface CatFactResponse {
 }
 
 /**
- * Calls the cat fact API and returns a cat fact.
+ * Calls the catfact.ninja API and returns a cat fact.
  * @param context the endpoint handler context.
  */
 async function handler<
