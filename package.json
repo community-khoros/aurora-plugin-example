@@ -19,7 +19,7 @@
     "precommit": "lint-staged"
   },
   "devDependencies": {
-    "khoros-aurora-sdk": "^24.4.4"
+    "khoros-aurora-sdk": "^24.5.0"
   },
   "engines": {
     "node": ">=16.17.0 <=20",

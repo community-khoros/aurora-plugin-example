@@ -1,11 +1,11 @@
 {
-  "name": "@customer/react-component",
+  "name": "@customer/sample-react-component",
   "version": "0.0.1",
   "private": true,
-  "dependencies": {
-    "react": "^18.2.0"
-  },
   "devDependencies": {
     "@types/react": "^18.2.22"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
   }
 }
