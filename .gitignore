@@ -11,8 +11,7 @@ federation.config.json
 /tsconfig.server.json
 node_modules
 dist
-pages
-!/res/pages/
+/pages/
 .next
 /.shelf/
 /types/**/aurora.d.ts

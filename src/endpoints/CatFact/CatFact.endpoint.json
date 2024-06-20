@@ -1,8 +1,6 @@
 {
-  "id": "Sample",
-  "httpMethods": [
-    "GET",
-    "POST"
-  ],
-  "postBody": "NONE"
+  "id": "CatFact",
+  "httpMethods": ["GET", "POST"],
+  "postBody": "NONE",
+  "path": "catfact"
 }

@@ -1,0 +1,22 @@
+{
+  self {
+    id
+    uid
+    login
+    avatar {
+      url
+    }
+    deleted
+    registrationData {
+      status
+    }
+  }
+  community {
+    id
+    displayId
+    nodeType
+    depth
+    title
+    shortTitle
+  }
+}
