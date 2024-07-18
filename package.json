@@ -7,19 +7,20 @@
     "src/**/*"
   ],
   "scripts": {
-    "init": "npm explore khoros-aurora-sdk -- npm run init:plugin -- $INIT_CWD",
-    "start": "npm explore khoros-aurora-sdk -- npm run start -- $INIT_CWD",
-    "dev": "npm explore khoros-aurora-sdk -- npm run dev:plugin -- $INIT_CWD",
-    "build": "npm explore khoros-aurora-sdk -- npm run build:plugin -- $INIT_CWD",
-    "lint": "npm explore khoros-aurora-sdk -- npm run lint:plugin -- $INIT_CWD",
-    "lint:fix": "npm explore khoros-aurora-sdk -- npm run lint:plugin:fix -- $INIT_CWD",
-    "format": "npm explore khoros-aurora-sdk -- npm run format:plugin -- $INIT_CWD",
-    "format:fix": "npm explore khoros-aurora-sdk -- npm run format:plugin:fix -- $INIT_CWD",
-    "gen": "npm explore khoros-aurora-sdk -- npm run gen  -- $INIT_CWD",
-    "precommit": "lint-staged"
+    "init": "npm explore khoros-aurora-sdk -- npm run init:plugin",
+    "start": "npm explore khoros-aurora-sdk -- npm run start",
+    "dev": "npm explore khoros-aurora-sdk -- npm run dev:plugin",
+    "build": "npm explore khoros-aurora-sdk -- npm run build:plugin",
+    "lint": "npm explore khoros-aurora-sdk -- npm run lint:plugin",
+    "lint:fix": "npm explore khoros-aurora-sdk -- npm run lint:plugin:fix",
+    "format": "npm explore khoros-aurora-sdk -- npm run format:plugin",
+    "format:fix": "npm explore khoros-aurora-sdk -- npm run format:plugin:fix",
+    "gen": "npm explore khoros-aurora-sdk -- npm run gen",
+    "precommit": "lint-staged",
+    "start:logger": "npm explore khoros-aurora-sdk -- npm run start:logger"
   },
   "devDependencies": {
-    "khoros-aurora-sdk": "^24.5.0"
+    "khoros-aurora-sdk": "^24.6.2"
   },
   "engines": {
     "node": ">=16.17.0 <=20",

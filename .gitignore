@@ -23,3 +23,4 @@ dist
 .prettierignore
 .prettierrc.js
 SDK.md
+/babelModules.config.json
