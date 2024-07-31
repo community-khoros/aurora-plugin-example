@@ -1,7 +1,7 @@
 import type { CustomComponentProps } from 'aurora/externalContext';
 import type { Community, User } from 'aurora/graphql/schema';
 import React, { Suspense, useState } from 'react';
-import styles from './Sample.module.css';
+import styles from './Sample.module.pcss';
 import graphqlQuery from './sample.query.graphql';
 
 /**
