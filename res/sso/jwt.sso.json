@@ -1,0 +1,21 @@
+{
+  "signature": {
+    "algorithm": "HS256",
+    "keyProvider": {
+        "type": "secret"
+    }
+  },
+  "token": {
+    "parameterName": "jwt",
+    "issuer": "http://localhost:8080",
+    "audience": "http://localhost:8080",
+    "subjectRequired": true,
+    "expirationRequired": true,
+    "clockSkew": 60
+  },
+  "claims": {
+    "ssoId": "sub",
+    "login": "login",
+    "email": "email"
+  }
+}
