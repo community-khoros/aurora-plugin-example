@@ -1,0 +1,17 @@
+{
+  "id": "PageContext",
+  "markupLanguage": "REACT",
+  "defaults": {
+    "config": {
+      "applicablePages": [],
+      "description": "This example component displays date from the page context."
+    },
+    "props": []
+  },
+  "components": [
+    {
+      "id": "custom.widget.PageContext"
+    }
+  ],
+  "grouping": "CUSTOM"
+}

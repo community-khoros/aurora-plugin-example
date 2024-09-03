@@ -1,3 +1,3 @@
-# Aurora plugin template
+# Aurora plugin examples
 
-This repository acts as a template for new Aurora plugins.
+This repository contains sample code to use when developing Aurora customizations.

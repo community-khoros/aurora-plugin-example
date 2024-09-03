@@ -16,6 +16,7 @@ dist
 /.shelf/
 /types/**/aurora.d.ts
 /types/graphql.d.ts
+/types/pcss.d.ts
 .nvmrc
 .eslintrc.js
 .eslintignore

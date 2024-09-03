@@ -1,0 +1,111 @@
+/*
+ * Copyright 2024 Khoros, LLC.
+ * Austin, Texas, U.S.A.  All Rights Reserved.
+ *
+ * This software is the  confidential and proprietary information
+ * of  Khoros, LLC.  ("Confidential Information")
+ * You shall not disclose such Confidential Information and shall
+ * use  it  only in  accordance  with  the terms of  the  license
+ * agreement you entered into with Khoros.
+ */
+
+@import '../../styles/mixins/_avatar.pcss';
+@import '../../styles/mixins/_panel.pcss';
+@import '../../styles/mixins/_screenreader.pcss';
+
+:root {
+  --gold-bg: #ffda61;
+  --gold-text: #4d3b01;
+  --silver-bg: #b8bbbf;
+  --silver-text: #24282e;
+  --bronze-bg: #ffccb8;
+  --bronze-text: #3b1c10;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  column-gap: 15px;
+  color: var(--lia-bs-body-color);
+  @include panel-defaults();
+
+  &-name {
+    font-size: var(--lia-bs-h5-font-size);
+    font-weight: var(--lia-bs-font-weight-normal);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &:hover {
+    color: currentColor;
+
+    .badge-wrap {
+      transform: rotate(10deg);
+    }
+  }
+}
+
+.avatar-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include avatar-size(30);
+
+  .avatar-img {
+    border-radius: var(--lia-avatar-border-radius);
+    background-color: var(--lia-bs-gray-400);
+    overflow: hidden;
+    display: block;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.list-item {
+  &:first-child .user {
+    background-color: var(--gold-bg);
+    color: var(--gold-text);
+
+    &-name {
+      font-size: var(--lia-bs-h3-font-size);
+    }
+    .avatar-wrap {
+      @include avatar-size(50);
+    }
+  }
+  &:nth-child(2) .user {
+    background-color: var(--silver-bg);
+    color: var(--silver-text);
+  }
+  &:nth-child(3) .user {
+    background-color: var(--bronze-bg);
+    color: var(--bronze-text);
+  }
+}
+
+.badge-wrap {
+  margin-left: auto;
+  transition: transform var(--lia-timing-normal) var(--lia-timing-function);
+
+  .badge {
+    @include avatar-size(50);
+  }
+}
+
+.congrats {
+  margin: 20px 0 0;
+  color: var(--lia-bs-text-muted);
+  font-size: var(--lia-bs-font-size-sm);
+}

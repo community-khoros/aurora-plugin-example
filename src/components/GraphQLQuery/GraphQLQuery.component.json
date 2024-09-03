@@ -1,0 +1,17 @@
+{
+  "id": "GraphQLQuery",
+  "markupLanguage": "REACT",
+  "defaults": {
+    "config": {
+      "applicablePages": [],
+      "description": "This example component makes a graphql query and displays the results using Aurora UI components."
+    },
+    "props": []
+  },
+  "components": [
+    {
+      "id": "custom.widget.GraphQLQuery"
+    }
+  ],
+  "grouping": "CUSTOM"
+}

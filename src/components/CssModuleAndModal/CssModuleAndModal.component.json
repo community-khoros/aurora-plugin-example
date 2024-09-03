@@ -1,0 +1,17 @@
+{
+  "id": "CssModuleAndModal",
+  "markupLanguage": "REACT",
+  "defaults": {
+    "config": {
+      "applicablePages": [],
+      "description": "This example component uses styling from CSS modules and i18n text keys, and displays a modal on button click."
+    },
+    "props": []
+  },
+  "components": [
+    {
+      "id": "custom.widget.CssModuleAndModal"
+    }
+  ],
+  "grouping": "CUSTOM"
+}

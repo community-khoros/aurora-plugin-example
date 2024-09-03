@@ -1,0 +1,17 @@
+{
+  "id": "CatFactToast",
+  "markupLanguage": "REACT",
+  "defaults": {
+    "config": {
+      "applicablePages": [],
+      "description": "This example component calls the custom CatFact endpoint and displays a toast with the result."
+    },
+    "props": []
+  },
+  "components": [
+    {
+      "id": "custom.widget.CatFactToast"
+    }
+  ],
+  "grouping": "CUSTOM"
+}

@@ -1,0 +1,17 @@
+#import "../../queries/UserView.fragment.graphql"
+
+query TopMembers {
+  users(
+    sorts: {
+      kudosReceivedCount: { direction: DESC, order: 2 }
+      messagesCount: { direction: DESC, order: 3 }
+    }
+    first: 5
+  ) {
+    edges {
+      node {
+        ...UserView
+      }
+    }
+  }
+}

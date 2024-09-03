@@ -1,0 +1,17 @@
+{
+  "id": "TopMembers",
+  "markupLanguage": "HANDLEBARS",
+  "defaults": {
+    "config": {
+      "applicablePages": ["COMMUNITY", "CATEGORY", "FORUM_BOARD"],
+      "dynamicByCoreNode": false,
+      "description": "Top Members by Likes"
+    },
+    "props": []
+  },
+  "components": [
+    {
+      "id": "custom.widget.TopMembers"
+    }
+  ]
+}

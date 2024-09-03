@@ -1,6 +1,6 @@
 {
-  "name": "@customer/plugin",
-  "version": "0.0.1",
+  "name": "@khoros/aurora-plugin-example",
+  "version": "1.0.0",
   "description": "A sample plugin package.json file.",
   "private": true,
   "workspaces": [
@@ -20,11 +20,10 @@
     "start:logger": "npm explore khoros-aurora-sdk -- npm run start:logger"
   },
   "devDependencies": {
-    "khoros-aurora-sdk": "^24.7.0"
+    "khoros-aurora-sdk": "^24.8.0-rc.0"
   },
   "engines": {
-    "node": ">=16.17.0 <=20",
-    "npm": ">=8.5.5"
+    "node": ">=18"
   },
   "husky": {
     "hooks": {

@@ -1,0 +1,52 @@
+{{!--
+Copyright 2024 Khoros, LLC.
+Austin, Texas, U.S.A.  All Rights Reserved.
+
+This software is the  confidential and proprietary information
+of  Khoros, LLC.  ("Confidential Information")
+You shall not disclose such Confidential Information and shall
+use  it  only in  accordance  with  the terms of  the  license
+agreement you entered into with Khoros.
+--}}
+{{#gql "TopMembers"}}
+ {{#with data.users.edges as |edges|}}
+   <ul class="list">
+     {{#each edges}}
+       {{#with node as |user|}}
+         <li class="list-item">
+           <a
+             class="user"
+             aria-label="Member {{user.login}}"
+             href="/users/{{user.login}}/{{user.uid}}"
+           >
+             <span class="avatar-wrap">
+               <img
+                 src="{{#if user.avatar.url}}{{user.avatar.url}}{{else}}/static/avatars/avatar-user-unknown.svg{{/if}}"
+                 alt="{{user.login}}'s avatar"
+                 class="avatar-img"
+                 aria-hidden="false"
+               />
+             </span>
+             <span class="user-name">{{user.login}}</span>
+             {{#if @first}}
+               <span class="badge-wrap">
+                 {{#if assets.badge}}
+                   <img
+                     src="{{assets.badge.url}}"
+                     class="badge"
+                     alt="{{i18n 'badge'}}"
+                   />
+                 {{/if}}
+                 <span class="sr-only">
+                   {{i18n "firstPlace"}}
+                 </span>
+               </span>
+             {{/if}}
+           </a>
+         </li>
+       {{/with}}
+     {{/each}}
+   </ul>
+   <p class="congrats">{{i18n "congrats"}}</p>
+ {{/with}}
+{{/gql}}

@@ -1,0 +1,16 @@
+fragment UserView on User {
+  id
+  uid
+  login
+  registrationData {
+    status
+  }
+  avatar {
+    url
+  }
+  messagesCount
+  solutionsCount
+  kudosGivenCount
+  kudosReceivedCount
+}
+

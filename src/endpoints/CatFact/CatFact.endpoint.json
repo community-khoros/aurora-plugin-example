@@ -1,6 +1,5 @@
 {
   "id": "CatFact",
   "httpMethods": ["GET", "POST"],
-  "postBody": "NONE",
-  "path": "catfact"
+  "postBody": "NONE"
 }
