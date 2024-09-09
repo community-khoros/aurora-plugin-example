@@ -1,0 +1,16 @@
+{
+  "id": "googletagmanager",
+  "async": true,
+  "defer": false,
+  "assets": ["googletagmanager.js", "googletagmanager.hbs"],
+  "variables": {
+    "stage": {
+      "phase": "stage",
+      "gtagid": "GTM-STAGE"
+    },
+    "prod": {
+      "phase": "prod",
+      "gtagid": "GTM-PROD"
+    }
+  }
+}
