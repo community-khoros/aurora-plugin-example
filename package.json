@@ -20,7 +20,7 @@
     "start:logger": "npm explore khoros-aurora-sdk -- npm run start:logger"
   },
   "devDependencies": {
-    "khoros-aurora-sdk": "^24.8.0-rc.0"
+    "khoros-aurora-sdk": "^24.8.0"
   },
   "engines": {
     "node": ">=18"
