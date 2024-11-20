@@ -1,0 +1,17 @@
+{
+  "id": "ImageWithAssetUrl",
+  "markupLanguage": "REACT",
+  "defaults": {
+    "config": {
+      "applicablePages": [],
+      "description": "This example component displays images"
+    },
+    "props": []
+  },
+  "components": [
+    {
+      "id": "custom.widget.ImageWithAssetUrl"
+    }
+  ],
+  "grouping": "CUSTOM"
+}

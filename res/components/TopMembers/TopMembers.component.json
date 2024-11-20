@@ -13,5 +13,6 @@
     {
       "id": "custom.widget.TopMembers"
     }
-  ]
+  ],
+  "grouping": "CUSTOM"
 }

@@ -1,0 +1,6 @@
+{
+  "id": "JsonBodySample",
+  "pathPrefix": "bodyTypes",
+  "httpMethods": ["POST"],
+  "bodyType": "JSON"
+}

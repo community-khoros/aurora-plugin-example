@@ -1,0 +1,6 @@
+fragment TopUser on User {
+  id
+  uid
+  login
+  email
+}

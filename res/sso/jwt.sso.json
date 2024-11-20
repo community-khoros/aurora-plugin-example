@@ -2,13 +2,13 @@
   "signature": {
     "algorithm": "HS256",
     "keyProvider": {
-        "type": "secret"
+      "type": "secret"
     }
   },
   "token": {
     "parameterName": "jwt",
-    "issuer": "http://localhost:8080",
-    "audience": "http://localhost:8080",
+    "issuer": "https://your.idp.com/issuer/uri",
+    "audience": "http://your.idp.com/audience/uri",
     "subjectRequired": true,
     "expirationRequired": true,
     "clockSkew": 60

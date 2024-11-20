@@ -9,9 +9,9 @@
  * agreement you entered into with Khoros.
  */
 import type { CustomComponentProps } from 'aurora/externalContext';
-import type { Community, User } from 'aurora/graphql/schema';
 import React, { Suspense } from 'react';
 import graphqlQuery from './sample.query.graphql';
+import type { SampleQuery, SampleQueryVariables } from './types/graphql-types';
 
 /**
  * This example component makes a graphql query and displays the results using Aurora UI components.
@@ -26,20 +26,24 @@ const GraphQLQuery: React.FC<CustomComponentProps> = ({ auroraContext }) => {
 
   const cx = useClassNameMapper();
 
-  const queryResult = useSuspenseQuery(graphqlQuery);
+  const queryResult = useSuspenseQuery<SampleQuery, SampleQueryVariables>(graphqlQuery);
 
   log.info('Query result %O ', queryResult.data);
 
-  const data = queryResult.data as Record<string, unknown>;
-  const self = data.self as User;
-  const node = data.community as Community;
+  const { data, error } = queryResult;
+
+  if (error) {
+    log.error(error, 'Error in graphql query');
+    return null;
+  }
+  const { self, community } = data;
 
   return (
     <div className={cx('test-style')}>
       <Panel>
         <PanelBody>
           <p>
-            <NodeLink node={node}>{node.title}</NodeLink> is a {phase} community
+            <NodeLink node={community}>{community.title}</NodeLink> is a {phase} community
           </p>
         </PanelBody>
       </Panel>

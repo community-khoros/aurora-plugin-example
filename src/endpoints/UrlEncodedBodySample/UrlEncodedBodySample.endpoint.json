@@ -1,0 +1,6 @@
+{
+  "id": "UrlEncodedBodySample",
+  "pathPrefix": "bodyTypes",
+  "httpMethods": ["POST"],
+  "bodyType": "URL_ENCODED"
+}

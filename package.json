@@ -17,10 +17,12 @@
     "format:fix": "npm explore khoros-aurora-sdk -- npm run format:plugin:fix",
     "gen": "npm explore khoros-aurora-sdk -- npm run gen",
     "precommit": "lint-staged",
-    "start:logger": "npm explore khoros-aurora-sdk -- npm run start:logger"
+    "start:logger": "npm explore khoros-aurora-sdk -- npm run start:logger",
+    "build:graphql": "npm explore khoros-aurora-sdk -- npm run build:graphql",
+    "validate": "npm explore khoros-aurora-sdk -- npm run validate:plugin"
   },
   "devDependencies": {
-    "khoros-aurora-sdk": "^24.8.0"
+    "khoros-aurora-sdk": "~24.10.0"
   },
   "engines": {
     "node": ">=18"

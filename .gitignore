@@ -25,3 +25,5 @@ dist
 .prettierrc.js
 SDK.md
 /babelModules.config.json
+**/types/graphql*.ts
+**/types/codegen.json

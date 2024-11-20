@@ -1,4 +1,4 @@
-{
+query Sample {
   self {
     id
     uid
@@ -13,6 +13,7 @@
   }
   community {
     id
+    entityType
     displayId
     nodeType
     depth
