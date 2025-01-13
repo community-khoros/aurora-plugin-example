@@ -22,7 +22,7 @@
     "validate": "npm explore khoros-aurora-sdk -- npm run validate:plugin"
   },
   "devDependencies": {
-    "khoros-aurora-sdk": "~24.11.0"
+    "khoros-aurora-sdk": "~24.12.1"
   },
   "engines": {
     "node": ">=18"
